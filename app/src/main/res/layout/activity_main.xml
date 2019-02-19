@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context=".MainActivity">
+
+    <com.yn.customsection.CustomSectionView
+        android:id="@+id/sectionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@drawable/def_icon"
+        app:right_img="@drawable/arrow"
+        app:section_view_bg="@color/bg_one"
+        app:tex="@string/app_name"
+        app:tex_color="#aaaaaa"
+        app:tex_size="@dimen/text_size" />
+
+    <com.yn.customsection.CustomSectionView
+        android:id="@+id/sectionView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:left_img="@drawable/food"
+        app:right_img="@drawable/arrow"
+        app:section_view_bg="@color/bg_two"
+        app:tex="@string/title1"
+        app:tex_color="@color/tex_color"
+        app:tex_size="@dimen/text_size" />
+
+    <com.yn.customsection.CustomSectionView
+        android:id="@+id/sectionView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:left_img="@drawable/icon_wallet"
+        app:right_img="@drawable/arrow"
+        app:section_view_bg="@color/bg_three"
+        app:tex="@string/title2"
+        app:tex_color="#aaaaaa"
+        app:tex_size="@dimen/text_size" />
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomSectionView</string>
+    <string name="title2">自定义标题2</string>
+    <string name="title1">自定义标题1</string>
+</resources>
