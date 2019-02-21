@@ -31,12 +31,10 @@ public class CustomSectionView extends RelativeLayout {
 
     public CustomSectionView(Context context) {
         this(context,null);
-        initView(context);
     }
 
     public CustomSectionView(Context context, AttributeSet attrs) {
         this(context, attrs,0);
-        initView(context);
     }
 
     public CustomSectionView(Context context, AttributeSet attrs, int defStyleAttr) {
