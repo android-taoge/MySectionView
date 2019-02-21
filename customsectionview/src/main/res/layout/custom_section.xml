@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rel_layout"
     xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/rel_layout"
     android:layout_width="match_parent"
     android:layout_height="45dp">
 
@@ -9,13 +9,14 @@
         android:id="@+id/iv_icon_left"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:gravity="center"
-        android:paddingTop="2dp"
-        android:paddingBottom="2dp"
         android:paddingLeft="10dp"
+        android:paddingTop="2dp"
         android:paddingRight="10dp"
+        android:paddingBottom="2dp"
         android:src="@drawable/food" />
 
     <TextView
@@ -23,24 +24,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/iv_icon_left"
         android:layout_toRightOf="@id/iv_icon_left"
         android:ellipsize="end"
         android:maxEms="12"
         android:singleLine="true"
         android:textColor="#868686"
         android:textSize="14sp"
-        tool:text="多岁的发发高达郭德纲" />
+        tool:text="多岁的发发高达郭德纲"
+        tool:ignore="RelativeOverlap" />
 
     <ImageView
         android:id="@+id/iv_arrow_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:paddingRight="5dp"
         android:paddingTop="2dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
         android:paddingBottom="2dp"
         android:src="@drawable/arrow" />
 
