@@ -28,9 +28,8 @@
         android:ellipsize="end"
         android:maxEms="12"
         android:singleLine="true"
-        android:textColor="#8b8b8b"
+        android:textColor="#868686"
         android:textSize="14sp"
-        android:textStyle="bold"
         tool:text="多岁的发发高达郭德纲" />
 
     <ImageView
