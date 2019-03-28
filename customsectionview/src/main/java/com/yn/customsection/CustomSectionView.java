@@ -3,7 +3,6 @@ package com.yn.customsection;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -23,7 +22,7 @@ public class CustomSectionView extends RelativeLayout {
     private TextView tvContent;
     private RelativeLayout rel_layout;
     private int mbgColor;
-    private int mTextColor;
+    protected int mTextColor;
     private String mContentText;
     private int mImgLeft;
     private int mImgRight;
@@ -50,8 +49,8 @@ public class CustomSectionView extends RelativeLayout {
         mbgColor = array.getColor(R.styleable.CustomSectionView_section_view_bg, Color.WHITE);
         mTextColor = array.getColor(R.styleable.CustomSectionView_tex_color, Color.GRAY);
         mContentText = array.getString(R.styleable.CustomSectionView_tex);
-        mImgLeft=array.getResourceId(R.styleable.CustomSectionView_left_img,R.drawable.food);
-        mImgRight=array.getResourceId(R.styleable.CustomSectionView_right_img,R.drawable.arrow);
+        mImgLeft=array.getResourceId(R.styleable.CustomSectionView_left_img,R.drawable.ic_shouce);
+        mImgRight=array.getResourceId(R.styleable.CustomSectionView_right_img,R.drawable.ic_right_arrow);
         //获取完资源要及时回收
         array.recycle();
 

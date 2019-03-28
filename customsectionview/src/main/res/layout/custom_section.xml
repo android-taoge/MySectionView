@@ -17,7 +17,7 @@
         android:paddingTop="2dp"
         android:paddingRight="10dp"
         android:paddingBottom="2dp"
-        android:src="@drawable/food" />
+        android:src="@drawable/ic_shouce" />
 
     <TextView
         android:id="@+id/tv_content"
@@ -33,8 +33,8 @@
         android:singleLine="true"
         android:textColor="#868686"
         android:textSize="14sp"
-        tool:text="多岁的发发高达郭德纲"
-        tool:ignore="RelativeOverlap" />
+        tool:ignore="RelativeOverlap"
+        tool:text="多岁的发发高达郭德纲" />
 
     <ImageView
         android:id="@+id/iv_arrow_right"
@@ -45,9 +45,18 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:paddingTop="2dp"
-        android:paddingEnd="5dp"
-        android:paddingRight="5dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
         android:paddingBottom="2dp"
-        android:src="@drawable/arrow" />
+        android:src="@drawable/ic_right_arrow" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#F5F5F5" />
 </RelativeLayout>
